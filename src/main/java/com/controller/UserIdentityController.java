@@ -43,6 +43,7 @@ public class UserIdentityController {
         String res=userIdentityService.login(email,password);
         if(res!="fail"){
             session.setAttribute("user",email);
+            System.out.println("login     "+session.getId());
         }
         return res;
     }

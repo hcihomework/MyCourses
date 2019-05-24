@@ -17,6 +17,7 @@ public class NewsController {
     @RequestMapping(value = "select.news",method = RequestMethod.GET)
     public List<News> findNewsList(HttpSession session){
         try{
+            System.out.println("news     "+session.getId());
             String user=session.getAttribute("user").toString();
             return newsService.findNewsList(user);
         }catch (Exception e){
