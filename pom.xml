@@ -20,12 +20,12 @@
 
     <dependencies>
         <!--默认启动项-->
-        <!--
+       
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        -->
+
         <!--tomcat启动项-->
         <!--&lt;!&ndash;-->
         <dependency>
