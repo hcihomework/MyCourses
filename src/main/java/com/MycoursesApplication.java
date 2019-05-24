@@ -10,14 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = "com.repository")
 @EntityScan(basePackages = "com.entity")
-public class MycoursesApplication extends SpringBootServletInitializer {
+public class MycoursesApplication  {
 
     public static void main(String[] args) {
         SpringApplication.run(MycoursesApplication.class, args);
-    }
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(MycoursesApplication.class);
     }
 
 }
